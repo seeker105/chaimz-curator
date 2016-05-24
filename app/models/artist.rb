@@ -1,4 +1,4 @@
-class Artist 
+class Artist
 
   attr_accessor :id, :name, :created_at, :updated_at
 
@@ -28,6 +28,11 @@ class Artist
 
   def self.service
     ChaimzService.new
+  end
+
+
+  def save
+    # This is an instance method. Saving a specific instance to the DB. NOT a class method
   end
 
 end
